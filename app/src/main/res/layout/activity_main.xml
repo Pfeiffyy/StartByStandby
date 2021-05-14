@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_take_photo"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:onClick="clickedTakePhoto" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_get_mail"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="clickedGetMail" />
+
+    <TextView
+        android:id="@+id/textTimer1"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:layout_alignBottom="@+id/fab_take_photo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="245dp"
+        android:gravity="center"
+        android:textColor="?attr/colorError"
+        android:textSize="70dp" />
+
+    <TextView
+        android:id="@+id/textTimerMailAbfrage"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:layout_alignBottom="@+id/fab_take_photo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="368dp"
+        android:gravity="center"
+        android:textColor="?attr/colorError"
+        android:textSize="70dp" />
+
+    <TextView
+        android:id="@+id/textTimerMail"
+        android:layout_width="139dp"
+        android:layout_height="115dp"
+        android:layout_above="@+id/fab_take_photo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="41dp"
+        android:gravity="center"
+        android:textColor="?attr/colorError"
+        android:textSize="70dp" />
+
+    <TextView
+        android:id="@+id/textViewText"
+        android:layout_width="305dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/textTimer1"
+        android:layout_alignBottom="@+id/textTimerMail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-228dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="397dp"
+        android:text="TextView" />
+</RelativeLayout>
